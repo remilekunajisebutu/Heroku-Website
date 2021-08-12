@@ -31,7 +31,7 @@ img {
 h3 {
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #777777;
+  color: orange;
 }
 
 hr {
@@ -87,8 +87,9 @@ pre.prettyprint {
 
 /*jumbotron*/
 .jumbotron-scope {
-  box-shadow: 0 0 30px #D7D7D7 inset;
-  border-bottom: 1px solid #e3e3e3;
+  
+  box-shadow: 0 0 30px #d39b22 inset;
+  border-bottom: 1px solid #e2a56b;
   background-color: #ffffff;
   padding-bottom: 0;
 }
@@ -355,3 +356,4 @@ pre.prettyprint {
 .padding-bottom-60 {
   padding-bottom: 60px;
 }
+
