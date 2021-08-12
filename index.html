@@ -91,9 +91,9 @@
                         <div class="well hidden-sm hidden-xs" id="sidebar-menu" data-spy="affix" data-offset-top="330">
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="#overview">Overview</a></li>
-                                
-                                <li><a href="#html">R-Analysis</a></li>
                                 <li><a href="#css">Database</a></li>
+                                <li><a href="#html">R-Analysis</a></li>
+                               
                                 <li><a href="#utility">Technology</a></li>
                                 <li><a href="#credits">Resources</a></li>
                                 
@@ -144,7 +144,44 @@
                         </div>
                         <!-- End Overview -->
                         
-                        <!-- End Folder Structure -->
+                       <!-- Utility Classes -->
+                       <div class="panel panel-default panel-scope" id="css">
+                        <div class="panel-heading"><h3>Database</h3></div>
+                        <div class="panel-body">
+                            <p>In this section we will be discussing the databases we have created that will be utilized for our machine learning model. To get an idea as to what our database will look like once joined, the following is a snapshot of our ERD model and Joined table once the query is executed.</p>
+                <pre class="prettyprint lang-html margin-bottom-5">
+                    Select *
+                    from seasons_and_quarters as sq
+                    left join aapl_stock on
+                    aapl_stock.date = sq.date 
+                    order by sq.date;
+                </pre>
+                        
+                            <h4>Entity Relationship Diagram</h4>
+                        <div class="row margin-bottom-20">
+                                <div class="col-md-6">
+                                    <img id="myImg" src="assets/img/erd-join.png" alt="ERD">
+                                </div>
+                                <div class="col-md-6">
+                                    <img id="myImg1" src="assets/img/jointable2.png" height="300px" width="360px"" alt="joined table">
+                                </div>
+                                <div id="myModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                  </div>
+                            
+                        </div>
+                    
+                        <div>
+                        <span>Database Link:</span><a href="https://youtu.be/r4HjviCTEOM">https://youtu.be/r4HjviCTEOM</a>
+                    </div>
+
+
+                    
+                        </div>
+                    </div>
+                    <!-- End Utility Classes -->
                         <!-- HTML Structure -->
                         <div class="panel panel-default panel-scope" id="html">
                             <div class="panel-heading"><h3>R-Analysis</h3></div>
@@ -171,44 +208,7 @@
                                 
                         <!-- End HTML Structure -->
                         
-                        <!-- Utility Classes -->
-                        <div class="panel panel-default panel-scope" id="css">
-                            <div class="panel-heading"><h3>Database</h3></div>
-                            <div class="panel-body">
-                                <p>In this section we will be discussing the databases we have created that will be utilized for our machine learning model. To get an idea as to what our database will look like once joined, the following is a snapshot of our ERD model and Joined table once the query is executed.</p>
-                    <pre class="prettyprint lang-html margin-bottom-5">
-                        Select *
-                        from seasons_and_quarters as sq
-                        left join aapl_stock on
-                        aapl_stock.date = sq.date 
-                        order by sq.date;
-                    </pre>
-                            
-                                <h4>Entity Relationship Diagram</h4>
-                            <div class="row margin-bottom-20">
-                                    <div class="col-md-6">
-                                        <img id="myImg" src="assets/img/erd-join.png" alt="ERD">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img id="myImg1" src="assets/img/jointable2.png" height="300px" width="360px"" alt="joined table">
-                                    </div>
-                                    <div id="myModal" class="modal">
-                                        <span class="close">&times;</span>
-                                        <img class="modal-content" id="img01">
-                                        <div id="caption"></div>
-                                      </div>
-                                
-                            </div>
                         
-                            <div>
-                            <span>Database Link:</span><a href="https://youtu.be/r4HjviCTEOM">https://youtu.be/r4HjviCTEOM</a>
-                        </div>
-
-
-                        
-                            </div>
-                        </div>
-                        <!-- End Utility Classes -->
 
                         <!-- CSS Structure -->
                         <div class="panel panel-default panel-scope" id="utility">
